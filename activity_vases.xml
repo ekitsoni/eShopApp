@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vases">
+
+    <TableRow
+        android:id="@+id/topLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <ImageView
+            android:id="@+id/backToCategories"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="318dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Vases"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            app:srcCompat="@drawable/cart"
+            android:focusable="true" />
+    </TableRow>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="693dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/vase1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/vase1" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/price1"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addVase1"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <Space
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/vase2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/vase2" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:id="@+id/price2"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="27€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addVase2"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/vase3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/vase3" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:id="@+id/price3"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="50€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addVase3"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <Space
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/vase4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/vase4" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:id="@+id/price4"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="45€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addVase4"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/vase5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/vase5" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:id="@+id/price5"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="60€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addVase5"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <Space
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/vase6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/vase6" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:id="@+id/price6"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="40€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addVase6"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/vase7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/vase7" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:id="@+id/price7"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="84€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addVase7"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <Space
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/vase8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/vase8" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:id="@+id/price8"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="25€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addVase8"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/vase9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/vase9" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:id="@+id/price9"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="64€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addVase9"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <Space
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/vase10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/vase10" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:id="@+id/price10"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="55€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addVase10"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="33dp"
+                android:layout_height="150dp" />
+
+        </TableLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

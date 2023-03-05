@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tables">
+
+    <TableRow
+        android:id="@+id/topLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <ImageView
+            android:id="@+id/backToCategories"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="318dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Tables"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            app:srcCompat="@drawable/cart"
+            android:focusable="true" />
+    </TableRow>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="693dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/table1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/table1" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/price1"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="52.50€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addTable1"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <Space
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/table2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/table2" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:id="@+id/price2"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="460€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addTable2"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/table3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/table3" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:id="@+id/price3"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="32€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addTable3"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <Space
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/table4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/table4" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:id="@+id/price4"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="240€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addTable4"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/table5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/table5" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:id="@+id/price5"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="110€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addTable5"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <Space
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/table6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/table6" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:id="@+id/price6"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="61€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addTable6"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/table7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/table7" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:id="@+id/price7"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="130€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addTable7"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <Space
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/table8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/table8" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:id="@+id/price8"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="260€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addTable8"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/table9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/table9" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:id="@+id/price9"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="130€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addTable9"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <Space
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/table10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/table10" />
+
+                    <TableRow
+                        android:layout_width="196dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:id="@+id/price10"
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="64€"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/addTable10"
+                            android:layout_width="76dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="150dp" />
+        </TableLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

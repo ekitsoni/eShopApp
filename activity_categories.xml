@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Categories">
+
+    <TableRow
+        android:id="@+id/topLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <ImageView
+            android:id="@+id/backToWelcome"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="318dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|top"
+            android:gravity="center"
+            android:text="Categories"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            app:srcCompat="@drawable/cart"
+            android:focusable="true" />
+    </TableRow>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="693dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:id="@+id/sofas"
+                    android:layout_width="155dp"
+                    android:layout_height="160dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.179"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.66">
+
+                    <ImageView
+                        android:id="@+id/sofa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/sofa1" />
+
+
+                    <TextView
+                        android:id="@+id/sofastxt"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Sofas"
+                        android:textSize="20sp" />
+
+                </TableLayout>
+
+                <Space
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:id="@+id/chairs"
+                    android:layout_width="155dp"
+                    android:layout_height="160dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.179"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.66">
+
+                    <ImageView
+                        android:id="@+id/chair"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/chair4" />
+
+
+                    <TextView
+                        android:id="@+id/chairstxt"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Chairs"
+                        android:textSize="20sp" />
+
+                </TableLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:id="@+id/tables"
+                    android:layout_width="155dp"
+                    android:layout_height="160dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.179"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.66">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/table4" />
+
+                    <TextView
+                        android:id="@+id/tablestxt"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Tables"
+                        android:textSize="20sp" />
+                </TableLayout>
+
+                <Space
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:id="@+id/lamps"
+                    android:layout_width="155dp"
+                    android:layout_height="160dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.179"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.66">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/lamp7" />
+
+                    <TextView
+                        android:id="@+id/lampstxt"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Lamps"
+                        android:textSize="20sp" />
+                </TableLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:id="@+id/carpets"
+                    android:layout_width="155dp"
+                    android:layout_height="160dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.179"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.66">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/carpet6" />
+
+                    <TextView
+                        android:id="@+id/carpetstxt"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Carpets"
+                        android:textSize="20sp" />
+                </TableLayout>
+
+                <Space
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:id="@+id/vases"
+                    android:layout_width="155dp"
+                    android:layout_height="160dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.179"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.66">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/vase5" />
+
+                    <TextView
+                        android:id="@+id/vasestxt"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Vases"
+                        android:textSize="20sp" />
+                </TableLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" />
+
+                <TableLayout
+                    android:id="@+id/curtains"
+                    android:layout_width="155dp"
+                    android:layout_height="160dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.179"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.66">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        app:srcCompat="@drawable/curtain1" />
+
+                    <TextView
+                        android:id="@+id/curtainstxt"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Curtains"
+                        android:textSize="20sp" />
+                </TableLayout>
+
+                <Space
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="150dp" />
+
+        </TableLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

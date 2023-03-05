@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart">
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <ImageView
+            android:id="@+id/backToCategories"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:clickable="true"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+
+        <TextView
+            android:layout_width="324dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Cart"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/card"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            app:srcCompat="@drawable/card" />
+    </TableRow>
+
+    <TableLayout
+        android:layout_width="406dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412">
+
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="204dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Total"
+                android:textSize="24sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/before"
+                android:layout_width="193dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="0.0"
+                android:textSize="24sp"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="You can convert to other currencies!"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="186dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:text="USD"/>
+
+            <TextView
+                android:id="@+id/after"
+                android:layout_width="206dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#000000" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="213dp"
+        android:layout_height="48dp"
+        android:text="Calculate"
+        android:textSize="16sp"
+        android:textColor="#C1998A"
+        app:backgroundTint="#A3FFF0DF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
